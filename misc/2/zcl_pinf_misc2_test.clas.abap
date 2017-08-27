@@ -1,14 +1,22 @@
-class ZCL_PINF_MISC2_TEST definition
-  public
-  final
-  create public .
+CLASS zcl_pinf_misc2_test DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC.
 
-public section.
-protected section.
-private section.
+  PUBLIC SECTION.
+    METHODS:
+      constructor.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
 ENDCLASS.
 
 
 
 CLASS ZCL_PINF_MISC2_TEST IMPLEMENTATION.
+
+
+  METHOD constructor.
+    DATA: lo_class TYPE REF TO zcl_pinf_internal.
+    DATA: lo_class2 TYPE REF TO zcl_pinf_test.
+  ENDMETHOD.
 ENDCLASS.
